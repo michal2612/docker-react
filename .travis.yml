@@ -6,4 +6,4 @@ before_install:
     - docker build -t michal2612/docker-react:latest -f Dockerfile.dev .
 
 script:
-    - docker run michal2612/docker-react:latest -d npm run test -- --coverage
+    - docker run 10e89e39d0f3 npm run test -- --coverage --watchAll=false 
